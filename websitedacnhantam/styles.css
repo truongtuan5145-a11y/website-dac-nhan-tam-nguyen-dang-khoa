@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/dac-nhan-tam.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    background-blend-mode: darken;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.book-cover {
+    width: 180px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    margin-bottom: 20px;
+}
+
+nav {
+    background: #4CAF50;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffeb3b;
+}
+
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section {
+    background: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #4CAF50;
+    border-bottom: 3px solid #4CAF50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+ol, ul {
+    margin-left: 30px;
+}
+
+.quotes li {
+    font-style: italic;
+    margin: 15px 0;
+    padding-left: 20px;
+    border-left: 4px solid #4CAF50;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header { padding: 60px 15px; }
+    .header-content h1 { font-size: 2.2rem; }
+    nav ul { flex-direction: column; }
+    nav li { margin: 10px 0; }
+}
